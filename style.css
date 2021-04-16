@@ -1,5 +1,6 @@
 body {
     margin: auto 0;
+    font-family: Arial;
 }
 .zone {
     /* padding:30px 50px;
@@ -18,9 +19,16 @@ body {
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    
 }
 
 /* NAV */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .main-nav {
     display: flex;
     list-style: none;
@@ -48,6 +56,7 @@ a{
     text-decoration: none;
 }
 
+
 /* COVER */
 .container {
     display: flex;
@@ -55,6 +64,11 @@ a{
     justify-content:center;
     height: 50vh;
 }
+
+.cover {
+    width: 30rem;
+}
+
 
 /* GRID */
 .grid-wrapper {
@@ -71,12 +85,20 @@ a{
     background-color: #444;
     padding: 130px; /*because the img is set to fill 100% of the box above, when we give it 130px padding it automatically becomes smaller */
     margin: 20px;
+    
+}
+
+.box:hover {
+    -webkit-box-transofrm: transform: rotate(-7deg);
+    -moz-box-transofrm: transform: rotate(-7deg);
+    -o-box-transofrm:transform: rotate(-7deg);
+    transform: rotate(-7deg);
 }
 
 /* FOOTER */
 footer {
     text-align: center;
-    
+
 }
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
